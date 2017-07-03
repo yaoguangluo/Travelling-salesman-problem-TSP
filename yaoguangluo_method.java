@@ -7,7 +7,7 @@ import java.util.Map;
 
 
 
-//Attension, this is designed by yaoguang luo and follow MIT license. for free use
+//Attension, this is designed by yaoguang luo and follow BSD license. for free use
 
 
 
