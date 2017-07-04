@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
-//Attension, this is designed by yaoguang luo and follow MIT license.
+//Attension, this is designed by yaoguang luo and follow BSD license.
 public class TSP
 {
     public static int small=1000000000;
