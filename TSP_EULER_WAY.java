@@ -1,6 +1,21 @@
 import java.util.ArrayList;
 import java.util.List;
 //Attension, this is designed by yaoguang luo and follow BSD license.
+/*
+output will be 
+x:0y:0
+x:1y:0
+x:2y:10
+x:8y:22
+x:16y:30
+x:18y:20
+x:22y:18
+x:12y:16
+x:10y:10
+x:6y:6
+x:1y:1
+the shortest distance:102
+*/
 public class TSP
 {
     public static int small=1000000000;
