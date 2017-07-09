@@ -1,6 +1,54 @@
 import java.util.ArrayList;
 import java.util.List;
 //Attension, this is designed by yaoguang luo and follow BSD license.
+
+/*
+output will be,    and  time<1sec
+x:0y:0
+x:39y:39
+x:38y:38
+x:37y:37
+x:36y:36
+x:35y:35
+x:34y:34
+x:33y:33
+x:32y:32
+x:31y:31
+x:30y:30
+x:29y:29
+x:28y:28
+x:27y:27
+x:26y:26
+x:25y:25
+x:24y:24
+x:23y:23
+x:22y:22
+x:21y:21
+x:20y:20
+x:19y:19
+x:18y:18
+x:17y:17
+x:16y:16
+x:15y:15
+x:14y:14
+x:13y:13
+x:12y:12
+x:11y:11
+x:10y:10
+x:3y:23
+x:1y:20
+x:8y:28
+x:15y:25
+x:17y:7
+x:19y:1
+x:12y:2
+x:6y:6
+x:4y:4
+x:1y:1
+the shortest distance:242
+
+*/
+
 public class TSP
 {  public static int small=1000000000;
    public static int te=0;
