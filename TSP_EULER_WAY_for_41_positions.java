@@ -72,7 +72,7 @@ public class TSP
        first.y=0;
        first.used=0;
        List<node>nodes = new ArrayList<node>();
-       if(x.length>14)
+       if(x.length>13)
        {
            findpath(first,x,y,nodes);
        }else{
