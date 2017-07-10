@@ -1,17 +1,17 @@
 /*
  output like be
 :
-14:4<-0:0->1:1
-3:23<-1:20->0:0
-19:1<-12:2->0:0
+4:4<-0:0->1:1
+11:21<-1:20->3:23
+4:4<-12:2->19:1
 8:28<-3:23->1:20
-6:6<-4:4->0:0
-11:21<-15:25->0:0
+1:1<-4:4->6:6
+8:28<-15:25->11:21
 10:10<-6:6->4:4
-19:1<-17:7->0:0
+12:2<-17:7->19:1
 15:25<-8:28->3:23
 17:7<-19:1->12:2
-11:11<-10:10->6:6
+12:12<-10:10->11:11
 12:12<-11:11->10:10
 13:13<-12:12->11:11
 14:14<-13:13->12:12
@@ -40,11 +40,10 @@
 37:37<-36:36->35:35
 38:38<-37:37->36:36
 39:39<-38:38->37:37
-36:36<-39:39->38:38
-21:21<-31:21->0:0
+37:37<-39:39->38:38
+22:22<-31:21->21:21
 3:23<-11:21->15:25
-6:6<-1:1->0:0
-
+4:4<-1:1->0:0
 
 */
 public class TSP
@@ -135,6 +134,8 @@ public class TSP
    }
     public static void findstate(node first, int[]x, int[]y, List<node> nodes)
     {
+
+
         for(int i=0;i<x.length;i++)
         {
             //find less 2 node
@@ -161,16 +162,16 @@ public class TSP
                 if(dis[j]<small && j != f)
                 {
                         int find=0;
-                        for(int k=0;k<nodes.size();k++)
+                        //for(int k=0;k<nodes.size();k++)
                         {
-                            if(nodes.get(k).index==j )
-                            {
-                                if(nodes.get(k).prev.index==i || nodes.get(k).next.index==i)
-                                {
+                            //if(nodes.get(k).index==j )
+                            //{
+                              //  if(nodes.get(k).prev.index==j || nodes.get(k).next.index!=j)
+                              //  {
                                     small = dis[j];
                                     s = j;
-                                }
-                            }
+                              //  }
+                            //}
 
                         }
                        if(nodes.size()==0)
@@ -187,26 +188,23 @@ public class TSP
                 if(dis[j]<small && j != f && j != s)
                 {
 
-                    int find=0;
-                    for(int k=0;k<nodes.size();k++)
-                    {
-                        if(nodes.get(k).index==s)
-                        {
-                            if(nodes.get(k).prev.index != j && nodes.get(k).next.index != j)
-                            {
-                                find+=1;
-                            }
 
-                        }
+                    small = dis[j];
+                    t = j;
+                        /*
                         if(nodes.get(k).index==j)
                         {
-                            if(nodes.get(k).prev == null ||nodes.get(k).next == null)
-                            {
-                                find+=1;
-                            }
+                            //if(nodes.get(k).prev.index != s && nodes.get(k).next.index != s)
+                            //{
+                                if(nodes.get(k).prev==null || nodes.get(k).next==null)
+                                {
+                                    find+=1;
+                                }
+                          //  }
                         }
-                    }
-                    if(nodes.size()==0 || find>=1)
+                        */
+
+                    if(nodes.size()==0)
                     {
                         small = dis[j];
                         t = j;
