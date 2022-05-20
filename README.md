@@ -1,5 +1,5 @@
 # Travelling-salesman-problem-TSP
-for amazon  design by Mr.yaoguang luo 本代码跟亚马逊没有关系。
+for amazon  design by Mr.yaoguang luo 本代码跟亚马逊没有关系。作者感激当年找不到工作的时候，亚马逊要作者去面试当 仓库工。那4年提供了好几次面试笔试机会给作者。
 
 奇怪 好几个2017年的 我自学 自主的 非 公司的 研究笔记全部成了 private。现全部 再public
 
